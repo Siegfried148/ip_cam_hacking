@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ONVIF enumerator.
+ONVIF enumerator
 """
 import argparse
 import base64
@@ -13,11 +13,9 @@ import socket
 import sys
 import time
 import uuid
-
 import requests
 import requests.auth
 import defusedxml.ElementTree as SafeET
-
 import conf
 
 # ---------------------------------------------------------------------------
@@ -761,10 +759,6 @@ def enumerate_deviceio(client, xaddr):
 
 # ---------------------------------------------------------------------------
 # Recording / Search / Replay
-#
-# Search's FindRecordings/GetSearchResults flow requires the device to create
-# a temporary search session token, so per the safe/read-only requirement it
-# is intentionally not implemented here (see README limitations).
 # ---------------------------------------------------------------------------
 
 def enumerate_recording(client, xaddr):

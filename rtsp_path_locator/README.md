@@ -11,7 +11,7 @@ potential hit.
 
 ## Requirements
 
-Python 3.10+. No third-party packages — only the standard library.
+Python 3.10+. No third-party packages, solo la librería estándar.
 
 ## Usage
 
@@ -65,9 +65,9 @@ Blank lines and lines starting with `#` are ignored.
 
 For each candidate path, a line is printed with a marker:
 
-- **`[+]`** — response differs from the baseline; likely a valid path.
-- **`[-]`** — response matches the baseline (looks invalid); only shown with `--verbose`.
-- **`[!]`** — network error, timeout, or unparseable response; the reason is shown instead of a
+- **`[+]`**: response differs from the baseline; likely a valid path.
+- **`[-]`**: response matches the baseline (looks invalid); only shown with `--verbose`.
+- **`[!]`**: network error, timeout, or unparseable response; the reason is shown instead of a
   status code.
 
 Example:

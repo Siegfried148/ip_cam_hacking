@@ -63,6 +63,6 @@ Pass `--verbose`/`-v` to see the status:
 
 ## Output
 
-- **`rtsp_paths.txt`** — sorted, deduplicated list of RTSP path templates, one per line.
-- **`rtsp_paths.json`** — same paths with metadata: ports, connection types, and manufacturers observed for each.
-- **`failed_urls.txt`** — only written if some pages failed after retries.
+- **`rtsp_paths.txt`**: sorted, deduplicated list of RTSP path templates, one per line.
+- **`rtsp_paths.json`**: same paths with metadata: ports, connection types, and manufacturers observed for each.
+- **`failed_urls.txt`**: only written if some pages failed after retries.
