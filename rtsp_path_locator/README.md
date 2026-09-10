@@ -11,7 +11,7 @@ potential hit.
 
 ## Requirements
 
-Python 3.10+. No third-party packages, solo la librería estándar.
+Python 3.10+. No third-party packages, standard library only.
 
 ## Usage
 

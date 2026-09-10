@@ -23,7 +23,7 @@ jq -r '
 ' <file>
 ```
 
-**Output de `results_1.json`**
+**Output for `results_1.json`**
 ```
 ONVIF URL:    http://192.168.1.177:8899/onvif/device_service
 Manufacturer: H264
@@ -32,7 +32,7 @@ Firmware:     V5.00.R02.00030665.10010.343706..ONVIF 16.12
 Serial:       efbd1abef49879fc
 ```
 
-**Output de `results_2.json`**
+**Output for `results_2.json`**
 ```
 ONVIF URL:    http://192.168.1.150:80/onvif/device_service
 Manufacturer: Hangzhou Hikvision Digital Technology Co., Ltd
@@ -56,13 +56,13 @@ jq -r '
 ' <file>
 ```
 
-**Output de `results_1.json`**
+**Output for `results_1.json`**
 ```
 Username:   admin
 User Level: Administrator
 ```
 
-**Output de `results_2.json`**
+**Output for `results_2.json`**
 ```
 Username:   admin
 User Level: Administrator
@@ -83,14 +83,14 @@ jq -r '[.media.stream_uris, .media2.stream_uris]
        | .[]' <file> | sort -u
 ```
 
-**Output de `results_1.json`**
+**Output for `results_1.json`**
 ```
 rtsp://192.168.1.177:554/stream=2
 rtsp://192.168.1.177:554/user=admin_password=NE83HO2r_channel=0_stream=0.sdp?real_stream
 rtsp://192.168.1.177:554/user=admin_password=NE83HO2r_channel=0_stream=1.sdp?real_stream
 ```
 
-**Output de `results_2.json`**
+**Output for `results_2.json`**
 ```
 rtsp://192.168.1.150:10554/Streaming/Unicast/channels/101
 rtsp://192.168.1.150:10554/Streaming/Unicast/channels/102
@@ -113,7 +113,7 @@ Whether ONVIF enforces auth, whether creds were supplied, and TLS status.
 jq '{onvif_url: .target.onvif_url, auth: .authentication}' <file>
 ```
 
-**Output de `results_1.json`**
+**Output for `results_1.json`**
 ```json
 {
   "onvif_url": "http://192.168.1.177:8899/onvif/device_service",
@@ -128,7 +128,7 @@ jq '{onvif_url: .target.onvif_url, auth: .authentication}' <file>
 }
 ```
 
-**Output de `results_2.json`**
+**Output for `results_2.json`**
 ```json
 {
   "onvif_url": "http://192.168.1.150:80/onvif/device_service",
@@ -160,7 +160,7 @@ jq '{
 }' <file>
 ```
 
-**Output de `results_1.json`**
+**Output for `results_1.json`**
 ```json
 {
   "target": "http://192.168.1.177:8899/onvif/device_service",
@@ -182,7 +182,7 @@ jq '{
 }
 ```
 
-**Output de `results_2.json`**
+**Output for `results_2.json`**
 ```json
 {
   "target": "http://192.168.1.150:80/onvif/device_service",
