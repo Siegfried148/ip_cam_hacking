@@ -1,0 +1,3517 @@
+{
+  "target": {
+    "onvif_url": "http://192.168.1.177:8899/onvif/device_service"
+  },
+  "authentication": {
+    "http_auth": false,
+    "ws_security": false,
+    "tls_verified": true,
+    "credentials_provided": false,
+    "required": false,
+    "status": "ok"
+  },
+  "device": {
+    "Manufacturer": "H264",
+    "Model": "XM530_RA50X20_8M",
+    "FirmwareVersion": "V5.00.R02.00030665.10010.343706..ONVIF 16.12",
+    "SerialNumber": "efbd1abef49879fc",
+    "HardwareId": "00001",
+    "conformance_profiles": [
+      "Streaming",
+      "T"
+    ]
+  },
+  "scopes": [
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/type/video_encoder"
+    },
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/type/audio_encoder"
+    },
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/hardware/IPC-model"
+    },
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/location/country/china"
+    },
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/name/NVT"
+    },
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/Profile/Streaming"
+    },
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/A1C2B3/mac/00:12:41:ba:94:35"
+    },
+    {
+      "ScopeDef": "Fixed",
+      "ScopeItem": "onvif://www.onvif.org/Profile/T"
+    }
+  ],
+  "network": {
+    "hostname": {
+      "HostnameInformation": {
+        "FromDHCP": "false",
+        "Name": "LocalHost"
+      }
+    },
+    "dns": {
+      "DNSInformation": {
+        "FromDHCP": "true",
+        "DNSFromDHCP": [
+          {
+            "Type": "IPv4",
+            "IPv4Address": "0xFE01A8C0"
+          },
+          {
+            "Type": "IPv4",
+            "IPv4Address": "0x72727272"
+          }
+        ]
+      }
+    },
+    "ntp": {
+      "NTPInformation": {
+        "FromDHCP": "false",
+        "NTPManual": {
+          "Type": "DNS",
+          "DNSname": "time.windows.com"
+        }
+      }
+    },
+    "network_interfaces": {
+      "NetworkInterfaces": {
+        "Enabled": "true",
+        "Info": {
+          "Name": "eth0",
+          "HwAddress": "00:12:41:BA:94:35",
+          "MTU": "1500"
+        },
+        "IPv4": {
+          "Enabled": "true",
+          "Config": {
+            "FromDHCP": {
+              "Address": "192.168.1.177",
+              "PrefixLength": "24"
+            },
+            "DHCP": "true"
+          }
+        },
+        "@token": "eth0"
+      }
+    },
+    "network_protocols": {
+      "NetworkProtocols": {
+        "Name": "RTSP",
+        "Enabled": "true",
+        "Port": "554"
+      }
+    },
+    "default_gateway": {
+      "NetworkGateway": {
+        "IPv4Address": "192.168.1.254"
+      }
+    }
+  },
+  "users": [
+    {
+      "Username": "admin",
+      "UserLevel": "Administrator"
+    }
+  ],
+  "services": [
+    {
+      "namespace": "http://www.onvif.org/ver10/device/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/device_service",
+      "version": {
+        "major": "16",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "Network": {
+            "IPFilter": "false",
+            "ZeroConfiguration": "true",
+            "IPVersion6": "false",
+            "DynDNS": "true",
+            "Dot11Configuration": "false",
+            "Dot1XConfigurations": "0",
+            "HostnameFromDHCP": "false",
+            "NTP": "2",
+            "DHCPv6": "false"
+          },
+          "Security": {
+            "TLS1.0": "false",
+            "TLS1.1": "false",
+            "TLS1.2": "false",
+            "OnboardKeyGeneration": "false",
+            "AccessPolicyConfig": "true",
+            "DefaultAccessPolicy": "true",
+            "Dot1X": "true",
+            "RemoteUserHandling": "false",
+            "X.509Token": "false",
+            "SAMLToken": "false",
+            "KerberosToken": "false",
+            "UsernameToken": "true",
+            "HttpDigest": "true",
+            "RELToken": "false",
+            "SupportedEAPMethods": "0",
+            "MaxUsers": "10",
+            "MaxUserNameLength": "32",
+            "MaxPasswordLength": "32"
+          },
+          "System": {
+            "DiscoveryResolve": "false",
+            "DiscoveryBye": "true",
+            "RemoteDiscovery": "false",
+            "SystemBackup": "false",
+            "SystemLogging": "true",
+            "FirmwareUpgrade": "false",
+            "HttpFirmwareUpgrade": "false",
+            "HttpSystemBackup": "false",
+            "HttpSystemLogging": "false",
+            "HttpSupportInformation": "false",
+            "StorageConfiguration": "false",
+            "MaxStorageConfigurations": "0",
+            "GeoLocationEntries": "0",
+            "AutoGeo": "",
+            "StorageTypesSupported": ""
+          },
+          "Misc": {
+            "AuxiliaryCommands": ""
+          }
+        }
+      }
+    },
+    {
+      "namespace": "http://www.onvif.org/ver20/media/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/media2_service",
+      "version": {
+        "major": "16",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "ProfileCapabilities": {
+            "MaximumNumberOfProfiles": "10",
+            "ConfigurationsSupported": "VideoSource VideoEncoder Metadata PTZ AudioSource AudioEncoder Analytics"
+          },
+          "StreamingCapabilities": {
+            "RTSPStreaming": "true",
+            "RTPMulticast": "false",
+            "RTP_RTSP_TCP": "true",
+            "NonAggregateControl": "false",
+            "AutoStartMulticast": "false"
+          },
+          "@SnapshotUri": "true",
+          "@Rotation": "false",
+          "@VideoSourceMode": "true",
+          "@OSD": "true",
+          "@TemporaryOSDText": "true",
+          "@Mask": "true",
+          "@SourceMask": "true"
+        }
+      }
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/media/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/media_service",
+      "version": {
+        "major": "16",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "ProfileCapabilities": {
+            "MaximumNumberOfProfiles": "3"
+          },
+          "StreamingCapabilities": {
+            "RTPMulticast": "false",
+            "RTP_TCP": "true",
+            "RTP_RTSP_TCP": "true",
+            "NonAggregateControl": "false",
+            "NoRTSPStreaming": "false"
+          },
+          "@SnapshotUri": "true",
+          "@Rotation": "false",
+          "@VideoSourceMode": "true",
+          "@OSD": "true",
+          "@TemporaryOSDText": "false",
+          "@EXICompression": "false"
+        }
+      }
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/events/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/event_service",
+      "version": {
+        "major": "16",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "WSSubscriptionPolicySupport": "true",
+          "WSPullPointSupport": "true",
+          "WSPausableSubscriptionManagerInterfaceSupport": "false",
+          "MaxNotificationProducers": "10",
+          "MaxPullPoints": "10",
+          "PersistentNotificationStorage": "false"
+        }
+      }
+    },
+    {
+      "namespace": "http://www.onvif.org/ver20/ptz/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/ptz_service",
+      "version": {
+        "major": "16",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "EFlip": "true",
+          "Reverse": "true",
+          "GetCompatibleConfigurations": "true",
+          "MoveStatus": "true",
+          "StatusPosition": "true"
+        }
+      }
+    },
+    {
+      "namespace": "http://www.onvif.org/ver20/imaging/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/image_service",
+      "version": {
+        "major": "17",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "ImageStabilization": "false",
+          "Presets": "false"
+        }
+      }
+    },
+    {
+      "namespace": "http://www.onvif.org/ver20/analytics/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/analytics_service",
+      "version": {
+        "major": "16",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "RuleSupport": "true",
+          "AnalyticsModuleSupport": "true",
+          "CellBasedSceneDescriptionSupported": "false",
+          "RuleOptionsSupported": "true",
+          "AnalyticsModuleOptionsSupported": "true"
+        }
+      }
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/deviceIO/wsdl",
+      "xaddr": "http://192.168.1.177:8899/onvif/deviceIO_service",
+      "version": {
+        "major": "16",
+        "minor": "12"
+      },
+      "capabilities": {
+        "Capabilities": {
+          "VideoSources": "1",
+          "VideoOutputs": "0",
+          "AudioSources": "1",
+          "AudioOutputs": "0",
+          "RelayOutputs": "0",
+          "SerialPorts": "0",
+          "DigitalInputs": "1",
+          "DigitalInputOptions": "true"
+        }
+      }
+    }
+  ],
+  "media": {
+    "video_sources": [
+      {
+        "Framerate": "25.0",
+        "Resolution": {
+          "Width": "1920",
+          "Height": "1080"
+        },
+        "Imaging": {
+          "BacklightCompensation": {
+            "Mode": "OFF",
+            "Level": "10.0"
+          },
+          "Brightness": "50.0",
+          "ColorSaturation": "50.0",
+          "Contrast": "50.0",
+          "Exposure": {
+            "Mode": "AUTO",
+            "Priority": "LowNoise",
+            "Window": {
+              "bottom": "1.0",
+              "top": "0.0",
+              "right": "1.0",
+              "left": "0.0"
+            },
+            "MinExposureTime": "10.0",
+            "MaxExposureTime": "40000.0",
+            "MinGain": "0.0",
+            "MaxGain": "100.0",
+            "MinIris": "0.0",
+            "MaxIris": "10.0",
+            "ExposureTime": "4000.0",
+            "Gain": "100.0",
+            "Iris": "10.0"
+          },
+          "Focus": {
+            "AutoFocusMode": "AUTO",
+            "DefaultSpeed": "100.0",
+            "NearLimit": "100.0",
+            "FarLimit": "1000.0"
+          },
+          "IrCutFilter": "AUTO",
+          "Sharpness": "3848.0",
+          "WideDynamicRange": {
+            "Mode": "OFF",
+            "Level": "50.0"
+          },
+          "WhiteBalance": {
+            "Mode": "AUTO",
+            "CrGain": "10.0",
+            "CbGain": "10.0"
+          }
+        },
+        "@token": "V_SRC_000"
+      }
+    ],
+    "audio_sources": [
+      {
+        "Channels": "2",
+        "@token": "AudioSourceToken"
+      }
+    ],
+    "video_source_configurations": [
+      {
+        "Name": "V_SRC_CFG_000",
+        "UseCount": "3",
+        "SourceToken": "V_SRC_000",
+        "Bounds": {
+          "height": "1080",
+          "width": "1920",
+          "y": "0",
+          "x": "0"
+        },
+        "@token": "V_SRC_000"
+      }
+    ],
+    "video_encoder_configurations": [
+      {
+        "Name": "V_ENC_000",
+        "UseCount": "1",
+        "Encoding": "H264",
+        "Resolution": {
+          "Width": "1920",
+          "Height": "1080"
+        },
+        "Quality": "2",
+        "RateControl": {
+          "FrameRateLimit": "12",
+          "EncodingInterval": "0",
+          "BitrateLimit": "2560"
+        },
+        "H264": {
+          "GovLength": "12",
+          "H264Profile": "Main"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "SessionTimeout": "PT10S",
+        "@token": "V_ENC_000",
+        "Options": {
+          "Options": {
+            "QualityRange": {
+              "Min": "1",
+              "Max": "6"
+            },
+            "H264": {
+              "ResolutionsAvailable": {
+                "Width": "1920",
+                "Height": "1080"
+              },
+              "GovLengthRange": {
+                "Min": "1",
+                "Max": "400"
+              },
+              "FrameRateRange": {
+                "Min": "1",
+                "Max": "25"
+              },
+              "EncodingIntervalRange": {
+                "Min": "0",
+                "Max": "1"
+              },
+              "H264ProfilesSupported": [
+                "Baseline",
+                "Main",
+                "High"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "Name": "V_ENC_001",
+        "UseCount": "1",
+        "Encoding": "H264",
+        "Resolution": {
+          "Width": "704",
+          "Height": "576"
+        },
+        "Quality": "2",
+        "RateControl": {
+          "FrameRateLimit": "12",
+          "EncodingInterval": "0",
+          "BitrateLimit": "1024"
+        },
+        "H264": {
+          "GovLength": "12",
+          "H264Profile": "Main"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "SessionTimeout": "PT10S",
+        "@token": "V_ENC_001",
+        "Options": {
+          "Options": {
+            "QualityRange": {
+              "Min": "1",
+              "Max": "6"
+            },
+            "H264": {
+              "ResolutionsAvailable": [
+                {
+                  "Width": "704",
+                  "Height": "576"
+                },
+                {
+                  "Width": "352",
+                  "Height": "288"
+                }
+              ],
+              "GovLengthRange": {
+                "Min": "1",
+                "Max": "400"
+              },
+              "FrameRateRange": {
+                "Min": "1",
+                "Max": "25"
+              },
+              "EncodingIntervalRange": {
+                "Min": "0",
+                "Max": "1"
+              },
+              "H264ProfilesSupported": [
+                "Baseline",
+                "Main",
+                "High"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "Name": "V_ENC_002",
+        "UseCount": "1",
+        "Encoding": "JPEG",
+        "Resolution": {
+          "Width": "704",
+          "Height": "576"
+        },
+        "Quality": "3",
+        "RateControl": {
+          "FrameRateLimit": "-3600",
+          "EncodingInterval": "0",
+          "BitrateLimit": "512"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "SessionTimeout": "PT10S",
+        "@token": "V_ENC_002",
+        "Options": {
+          "Options": {
+            "QualityRange": {
+              "Min": "1",
+              "Max": "6"
+            },
+            "JPEG": {
+              "ResolutionsAvailable": [
+                {
+                  "Width": "704",
+                  "Height": "576"
+                },
+                {
+                  "Width": "352",
+                  "Height": "288"
+                }
+              ],
+              "FrameRateRange": {
+                "Min": "1",
+                "Max": "1"
+              },
+              "EncodingIntervalRange": {
+                "Min": "0",
+                "Max": "1"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "audio_source_configurations": [
+      {
+        "Name": "A_SRC_CFG_000",
+        "UseCount": "2",
+        "SourceToken": "AudioSourceToken",
+        "@token": "A_SRC_CFG_000"
+      }
+    ],
+    "audio_encoder_configurations": [
+      {
+        "Name": "A_ENC_000",
+        "UseCount": "2",
+        "Encoding": "G711",
+        "Bitrate": "128",
+        "SampleRate": "8",
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "SessionTimeout": "PT10S",
+        "@token": "A_ENC_000",
+        "Options": {
+          "Options": {
+            "Options": {
+              "Encoding": "G711",
+              "BitrateList": {
+                "Items": "128"
+              },
+              "SampleRateList": {
+                "Items": "8"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "metadata_configurations": [
+      {
+        "Name": "MetadataConfiguration",
+        "UseCount": "0",
+        "PTZStatus": {
+          "Status": "true",
+          "Position": "false"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "SessionTimeout": "PT60S",
+        "@token": "MetadataToken"
+      }
+    ],
+    "profiles": [
+      {
+        "Name": "mainStream",
+        "VideoSourceConfiguration": {
+          "Name": "V_SRC_CFG_000",
+          "UseCount": "3",
+          "SourceToken": "V_SRC_000",
+          "Bounds": {
+            "height": "1080",
+            "width": "1920",
+            "y": "0",
+            "x": "0"
+          },
+          "@token": "V_SRC_000"
+        },
+        "AudioSourceConfiguration": {
+          "Name": "A_SRC_CFG_000",
+          "UseCount": "2",
+          "SourceToken": "AudioSourceToken",
+          "@token": "A_SRC_CFG_000"
+        },
+        "VideoEncoderConfiguration": {
+          "Name": "V_ENC_000",
+          "UseCount": "1",
+          "Encoding": "H264",
+          "Resolution": {
+            "Width": "1920",
+            "Height": "1080"
+          },
+          "Quality": "2",
+          "RateControl": {
+            "FrameRateLimit": "12",
+            "EncodingInterval": "0",
+            "BitrateLimit": "2560"
+          },
+          "H264": {
+            "GovLength": "12",
+            "H264Profile": "Main"
+          },
+          "Multicast": {
+            "Address": {
+              "Type": "IPv4",
+              "IPv4Address": "239.0.1.0"
+            },
+            "Port": "32002",
+            "TTL": "2",
+            "AutoStart": "false"
+          },
+          "SessionTimeout": "PT10S",
+          "@token": "V_ENC_000"
+        },
+        "AudioEncoderConfiguration": {
+          "Name": "A_ENC_000",
+          "UseCount": "2",
+          "Encoding": "G711",
+          "Bitrate": "128",
+          "SampleRate": "8",
+          "Multicast": {
+            "Address": {
+              "Type": "IPv4",
+              "IPv4Address": "239.0.1.0"
+            },
+            "Port": "32002",
+            "TTL": "2",
+            "AutoStart": "false"
+          },
+          "SessionTimeout": "PT10S",
+          "@token": "A_ENC_000"
+        },
+        "VideoAnalyticsConfiguration": {
+          "Name": "VideoAnalytics",
+          "UseCount": "3",
+          "AnalyticsEngineConfiguration": {
+            "AnalyticsModule": [
+              {
+                "Parameters": {
+                  "SimpleItem": {
+                    "Name": "Sensitivity",
+                    "Value": "50"
+                  },
+                  "ElementItem": {
+                    "CellLayout": {
+                      "Transformation": {
+                        "Translate": {
+                          "x": "-1.00",
+                          "y": "-1.00"
+                        },
+                        "Scale": {
+                          "x": "0.285714",
+                          "y": "0.285714"
+                        }
+                      },
+                      "@Columns": "7",
+                      "@Rows": "7"
+                    },
+                    "@Name": "Layout"
+                  }
+                },
+                "@Name": "MyCellMotionModule",
+                "@Type": "tt:CellMotionEngine"
+              },
+              {
+                "Parameters": {
+                  "SimpleItem": {
+                    "Name": "Sensitivity",
+                    "Value": "50"
+                  },
+                  "ElementItem": [
+                    {
+                      "Transformation": {
+                        "Translate": {
+                          "x": "-1.000000",
+                          "y": "-1.000000"
+                        },
+                        "Scale": {
+                          "x": "0.002841",
+                          "y": "0.003472"
+                        }
+                      },
+                      "@Name": "Transformation"
+                    },
+                    {
+                      "PolygonConfiguration": {
+                        "Polygon": {
+                          "Point": [
+                            {
+                              "x": "0",
+                              "y": "0"
+                            },
+                            {
+                              "x": "0",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "0"
+                            }
+                          ]
+                        }
+                      },
+                      "@Name": "Field"
+                    }
+                  ]
+                },
+                "@Name": "MyTamperDetecModule",
+                "@Type": "tt:TamperEngine"
+              }
+            ]
+          },
+          "RuleEngineConfiguration": {
+            "Rule": [
+              {
+                "Parameters": {
+                  "SimpleItem": [
+                    {
+                      "Name": "MinCount",
+                      "Value": "5"
+                    },
+                    {
+                      "Name": "AlarmOnDelay",
+                      "Value": "100"
+                    },
+                    {
+                      "Name": "AlarmOffDelay",
+                      "Value": "100"
+                    },
+                    {
+                      "Name": "ActiveCells",
+                      "Value": "+/8AgA=="
+                    }
+                  ]
+                },
+                "@Name": "MyMotionDetectorRule",
+                "@Type": "tt:CellMotionDetector"
+              },
+              {
+                "Parameters": {
+                  "ElementItem": {
+                    "PolygonConfiguration": {
+                      "Polygon": {
+                        "Point": [
+                          {
+                            "x": "0",
+                            "y": "0"
+                          },
+                          {
+                            "x": "0",
+                            "y": "576"
+                          },
+                          {
+                            "x": "704",
+                            "y": "576"
+                          },
+                          {
+                            "x": "704",
+                            "y": "0"
+                          }
+                        ]
+                      }
+                    },
+                    "@Name": "Field"
+                  }
+                },
+                "@Name": "MyTamperDetectorRule",
+                "@Type": "tt:TamperDetector"
+              }
+            ]
+          },
+          "@token": "VideoAnalyticsToken0"
+        },
+        "PTZConfiguration": {
+          "Name": "PTZConfiguration",
+          "UseCount": "3",
+          "NodeToken": "NODE_000",
+          "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+          "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+          "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+          "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+          "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+          "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+          "DefaultPTZSpeed": {
+            "PanTilt": {
+              "x": "0.5",
+              "y": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+            },
+            "Zoom": {
+              "x": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+            }
+          },
+          "DefaultPTZTimeout": "PT5S",
+          "PanTiltLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              },
+              "YRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "ZoomLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "0.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "Extension": {
+            "PTControlDirection": {
+              "EFlip": {
+                "Mode": "OFF"
+              },
+              "Reverse": {
+                "Mode": "OFF"
+              }
+            }
+          },
+          "@token": "PTZConfigurationToken",
+          "@MoveRamp": "0",
+          "@PresetRamp": "0",
+          "@PresetTourRamp": "0"
+        },
+        "Extension": "",
+        "@fixed": "true",
+        "@token": "PROFILE_000"
+      },
+      {
+        "Name": "subStream",
+        "VideoSourceConfiguration": {
+          "Name": "V_SRC_CFG_000",
+          "UseCount": "3",
+          "SourceToken": "V_SRC_000",
+          "Bounds": {
+            "height": "1080",
+            "width": "1920",
+            "y": "0",
+            "x": "0"
+          },
+          "@token": "V_SRC_000"
+        },
+        "AudioSourceConfiguration": {
+          "Name": "A_SRC_CFG_000",
+          "UseCount": "2",
+          "SourceToken": "AudioSourceToken",
+          "@token": "A_SRC_CFG_000"
+        },
+        "VideoEncoderConfiguration": {
+          "Name": "V_ENC_001",
+          "UseCount": "1",
+          "Encoding": "H264",
+          "Resolution": {
+            "Width": "704",
+            "Height": "576"
+          },
+          "Quality": "2",
+          "RateControl": {
+            "FrameRateLimit": "12",
+            "EncodingInterval": "0",
+            "BitrateLimit": "1024"
+          },
+          "H264": {
+            "GovLength": "12",
+            "H264Profile": "Main"
+          },
+          "Multicast": {
+            "Address": {
+              "Type": "IPv4",
+              "IPv4Address": "239.0.1.0"
+            },
+            "Port": "32002",
+            "TTL": "2",
+            "AutoStart": "false"
+          },
+          "SessionTimeout": "PT10S",
+          "@token": "V_ENC_001"
+        },
+        "AudioEncoderConfiguration": {
+          "Name": "A_ENC_000",
+          "UseCount": "2",
+          "Encoding": "G711",
+          "Bitrate": "128",
+          "SampleRate": "8",
+          "Multicast": {
+            "Address": {
+              "Type": "IPv4",
+              "IPv4Address": "239.0.1.0"
+            },
+            "Port": "32002",
+            "TTL": "2",
+            "AutoStart": "false"
+          },
+          "SessionTimeout": "PT10S",
+          "@token": "A_ENC_000"
+        },
+        "VideoAnalyticsConfiguration": {
+          "Name": "VideoAnalytics",
+          "UseCount": "3",
+          "AnalyticsEngineConfiguration": {
+            "AnalyticsModule": [
+              {
+                "Parameters": {
+                  "SimpleItem": {
+                    "Name": "Sensitivity",
+                    "Value": "50"
+                  },
+                  "ElementItem": {
+                    "CellLayout": {
+                      "Transformation": {
+                        "Translate": {
+                          "x": "-1.00",
+                          "y": "-1.00"
+                        },
+                        "Scale": {
+                          "x": "0.285714",
+                          "y": "0.285714"
+                        }
+                      },
+                      "@Columns": "7",
+                      "@Rows": "7"
+                    },
+                    "@Name": "Layout"
+                  }
+                },
+                "@Name": "MyCellMotionModule",
+                "@Type": "tt:CellMotionEngine"
+              },
+              {
+                "Parameters": {
+                  "SimpleItem": {
+                    "Name": "Sensitivity",
+                    "Value": "50"
+                  },
+                  "ElementItem": [
+                    {
+                      "Transformation": {
+                        "Translate": {
+                          "x": "-1.000000",
+                          "y": "-1.000000"
+                        },
+                        "Scale": {
+                          "x": "0.002841",
+                          "y": "0.003472"
+                        }
+                      },
+                      "@Name": "Transformation"
+                    },
+                    {
+                      "PolygonConfiguration": {
+                        "Polygon": {
+                          "Point": [
+                            {
+                              "x": "0",
+                              "y": "0"
+                            },
+                            {
+                              "x": "0",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "0"
+                            }
+                          ]
+                        }
+                      },
+                      "@Name": "Field"
+                    }
+                  ]
+                },
+                "@Name": "MyTamperDetecModule",
+                "@Type": "tt:TamperEngine"
+              }
+            ]
+          },
+          "RuleEngineConfiguration": {
+            "Rule": [
+              {
+                "Parameters": {
+                  "SimpleItem": [
+                    {
+                      "Name": "MinCount",
+                      "Value": "5"
+                    },
+                    {
+                      "Name": "AlarmOnDelay",
+                      "Value": "100"
+                    },
+                    {
+                      "Name": "AlarmOffDelay",
+                      "Value": "100"
+                    },
+                    {
+                      "Name": "ActiveCells",
+                      "Value": "+/8AgA=="
+                    }
+                  ]
+                },
+                "@Name": "MyMotionDetectorRule",
+                "@Type": "tt:CellMotionDetector"
+              },
+              {
+                "Parameters": {
+                  "ElementItem": {
+                    "PolygonConfiguration": {
+                      "Polygon": {
+                        "Point": [
+                          {
+                            "x": "0",
+                            "y": "0"
+                          },
+                          {
+                            "x": "0",
+                            "y": "576"
+                          },
+                          {
+                            "x": "704",
+                            "y": "576"
+                          },
+                          {
+                            "x": "704",
+                            "y": "0"
+                          }
+                        ]
+                      }
+                    },
+                    "@Name": "Field"
+                  }
+                },
+                "@Name": "MyTamperDetectorRule",
+                "@Type": "tt:TamperDetector"
+              }
+            ]
+          },
+          "@token": "VideoAnalyticsToken0"
+        },
+        "PTZConfiguration": {
+          "Name": "PTZConfiguration",
+          "UseCount": "3",
+          "NodeToken": "NODE_000",
+          "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+          "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+          "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+          "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+          "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+          "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+          "DefaultPTZSpeed": {
+            "PanTilt": {
+              "x": "0.5",
+              "y": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+            },
+            "Zoom": {
+              "x": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+            }
+          },
+          "DefaultPTZTimeout": "PT5S",
+          "PanTiltLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              },
+              "YRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "ZoomLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "0.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "Extension": {
+            "PTControlDirection": {
+              "EFlip": {
+                "Mode": "OFF"
+              },
+              "Reverse": {
+                "Mode": "OFF"
+              }
+            }
+          },
+          "@token": "PTZConfigurationToken",
+          "@MoveRamp": "0",
+          "@PresetRamp": "0",
+          "@PresetTourRamp": "0"
+        },
+        "Extension": "",
+        "@fixed": "true",
+        "@token": "PROFILE_001"
+      },
+      {
+        "Name": "snapStream",
+        "VideoSourceConfiguration": {
+          "Name": "V_SRC_CFG_000",
+          "UseCount": "3",
+          "SourceToken": "V_SRC_000",
+          "Bounds": {
+            "height": "1080",
+            "width": "1920",
+            "y": "0",
+            "x": "0"
+          },
+          "@token": "V_SRC_000"
+        },
+        "VideoEncoderConfiguration": {
+          "Name": "V_ENC_002",
+          "UseCount": "1",
+          "Encoding": "JPEG",
+          "Resolution": {
+            "Width": "704",
+            "Height": "576"
+          },
+          "Quality": "3",
+          "RateControl": {
+            "FrameRateLimit": "-3600",
+            "EncodingInterval": "0",
+            "BitrateLimit": "512"
+          },
+          "Multicast": {
+            "Address": {
+              "Type": "IPv4",
+              "IPv4Address": "239.0.1.0"
+            },
+            "Port": "32002",
+            "TTL": "2",
+            "AutoStart": "false"
+          },
+          "SessionTimeout": "PT10S",
+          "@token": "V_ENC_002"
+        },
+        "VideoAnalyticsConfiguration": {
+          "Name": "VideoAnalytics",
+          "UseCount": "3",
+          "AnalyticsEngineConfiguration": {
+            "AnalyticsModule": [
+              {
+                "Parameters": {
+                  "SimpleItem": {
+                    "Name": "Sensitivity",
+                    "Value": "50"
+                  },
+                  "ElementItem": {
+                    "CellLayout": {
+                      "Transformation": {
+                        "Translate": {
+                          "x": "-1.00",
+                          "y": "-1.00"
+                        },
+                        "Scale": {
+                          "x": "0.285714",
+                          "y": "0.285714"
+                        }
+                      },
+                      "@Columns": "7",
+                      "@Rows": "7"
+                    },
+                    "@Name": "Layout"
+                  }
+                },
+                "@Name": "MyCellMotionModule",
+                "@Type": "tt:CellMotionEngine"
+              },
+              {
+                "Parameters": {
+                  "SimpleItem": {
+                    "Name": "Sensitivity",
+                    "Value": "50"
+                  },
+                  "ElementItem": [
+                    {
+                      "Transformation": {
+                        "Translate": {
+                          "x": "-1.000000",
+                          "y": "-1.000000"
+                        },
+                        "Scale": {
+                          "x": "0.002841",
+                          "y": "0.003472"
+                        }
+                      },
+                      "@Name": "Transformation"
+                    },
+                    {
+                      "PolygonConfiguration": {
+                        "Polygon": {
+                          "Point": [
+                            {
+                              "x": "0",
+                              "y": "0"
+                            },
+                            {
+                              "x": "0",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "0"
+                            }
+                          ]
+                        }
+                      },
+                      "@Name": "Field"
+                    }
+                  ]
+                },
+                "@Name": "MyTamperDetecModule",
+                "@Type": "tt:TamperEngine"
+              }
+            ]
+          },
+          "RuleEngineConfiguration": {
+            "Rule": [
+              {
+                "Parameters": {
+                  "SimpleItem": [
+                    {
+                      "Name": "MinCount",
+                      "Value": "5"
+                    },
+                    {
+                      "Name": "AlarmOnDelay",
+                      "Value": "100"
+                    },
+                    {
+                      "Name": "AlarmOffDelay",
+                      "Value": "100"
+                    },
+                    {
+                      "Name": "ActiveCells",
+                      "Value": "+/8AgA=="
+                    }
+                  ]
+                },
+                "@Name": "MyMotionDetectorRule",
+                "@Type": "tt:CellMotionDetector"
+              },
+              {
+                "Parameters": {
+                  "ElementItem": {
+                    "PolygonConfiguration": {
+                      "Polygon": {
+                        "Point": [
+                          {
+                            "x": "0",
+                            "y": "0"
+                          },
+                          {
+                            "x": "0",
+                            "y": "576"
+                          },
+                          {
+                            "x": "704",
+                            "y": "576"
+                          },
+                          {
+                            "x": "704",
+                            "y": "0"
+                          }
+                        ]
+                      }
+                    },
+                    "@Name": "Field"
+                  }
+                },
+                "@Name": "MyTamperDetectorRule",
+                "@Type": "tt:TamperDetector"
+              }
+            ]
+          },
+          "@token": "VideoAnalyticsToken0"
+        },
+        "PTZConfiguration": {
+          "Name": "PTZConfiguration",
+          "UseCount": "3",
+          "NodeToken": "NODE_000",
+          "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+          "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+          "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+          "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+          "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+          "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+          "DefaultPTZSpeed": {
+            "PanTilt": {
+              "x": "0.5",
+              "y": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+            },
+            "Zoom": {
+              "x": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+            }
+          },
+          "DefaultPTZTimeout": "PT5S",
+          "PanTiltLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              },
+              "YRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "ZoomLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "0.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "Extension": {
+            "PTControlDirection": {
+              "EFlip": {
+                "Mode": "OFF"
+              },
+              "Reverse": {
+                "Mode": "OFF"
+              }
+            }
+          },
+          "@token": "PTZConfigurationToken",
+          "@MoveRamp": "0",
+          "@PresetRamp": "0",
+          "@PresetTourRamp": "0"
+        },
+        "Extension": "",
+        "@fixed": "true",
+        "@token": "PROFILE_002"
+      }
+    ],
+    "stream_uris": {
+      "PROFILE_000": "rtsp://192.168.1.177:554/user=admin_password=NE83HO2r_channel=0_stream=0.sdp?real_stream",
+      "PROFILE_001": "rtsp://192.168.1.177:554/user=admin_password=NE83HO2r_channel=0_stream=1.sdp?real_stream"
+    },
+    "snapshot_uris": {
+      "PROFILE_000": "http://192.168.1.177/webcapture.jpg?command=snap&channel=0&user=admin&password=NE83HO2r",
+      "PROFILE_001": "http://192.168.1.177/webcapture.jpg?command=snap&channel=0&user=admin&password=NE83HO2r",
+      "PROFILE_002": "http://192.168.1.177/webcapture.jpg?command=snap&channel=0&user=admin&password=NE83HO2r"
+    }
+  },
+  "media2": {
+    "profiles": [
+      {
+        "Name": "mainStream",
+        "Configurations": {
+          "VideoSource": {
+            "Name": "V_SRC_CFG_000",
+            "UseCount": "3",
+            "SourceToken": "V_SRC_000",
+            "Bounds": {
+              "height": "1080",
+              "width": "1920",
+              "y": "0",
+              "x": "0"
+            },
+            "@token": "V_SRC_000"
+          },
+          "AudioSource": {
+            "Name": "A_SRC_CFG_000",
+            "UseCount": "2",
+            "SourceToken": "AudioSourceToken",
+            "@token": "A_SRC_CFG_000"
+          },
+          "VideoEncoder": {
+            "Name": "V_ENC_000",
+            "UseCount": "1",
+            "Encoding": "H264",
+            "Resolution": {
+              "Width": "1920",
+              "Height": "1080"
+            },
+            "RateControl": {
+              "FrameRateLimit": "12.0",
+              "BitrateLimit": "2560",
+              "@ConstantBitRate": "false"
+            },
+            "Multicast": {
+              "Address": {
+                "Type": "IPv4",
+                "IPv4Address": "239.0.1.0"
+              },
+              "Port": "32002",
+              "TTL": "2",
+              "AutoStart": "false"
+            },
+            "Quality": "2.00",
+            "@token": "V_ENC_000",
+            "@GovLength": "12",
+            "@Profile": "Main"
+          },
+          "AudioEncoder": {
+            "Name": "A_ENC_000",
+            "UseCount": "2",
+            "Encoding": "G711",
+            "Bitrate": "128",
+            "SampleRate": "8",
+            "@token": "A_ENC_000"
+          },
+          "Analytics": {
+            "Name": "VideoAnalytics",
+            "UseCount": "3",
+            "AnalyticsEngineConfiguration": {
+              "AnalyticsModule": [
+                {
+                  "Parameters": {
+                    "SimpleItem": {
+                      "Name": "Sensitivity",
+                      "Value": "50"
+                    },
+                    "ElementItem": {
+                      "CellLayout": {
+                        "Transformation": {
+                          "Translate": {
+                            "x": "-1.00",
+                            "y": "-1.00"
+                          },
+                          "Scale": {
+                            "x": "0.285714",
+                            "y": "0.285714"
+                          }
+                        },
+                        "@Columns": "7",
+                        "@Rows": "7"
+                      },
+                      "@Name": "Layout"
+                    }
+                  },
+                  "@Name": "MyCellMotionModule",
+                  "@Type": "tt:CellMotionEngine"
+                },
+                {
+                  "Parameters": {
+                    "SimpleItem": {
+                      "Name": "Sensitivity",
+                      "Value": "50"
+                    },
+                    "ElementItem": [
+                      {
+                        "Transformation": {
+                          "Translate": {
+                            "x": "-1.000000",
+                            "y": "-1.000000"
+                          },
+                          "Scale": {
+                            "x": "0.002841",
+                            "y": "0.003472"
+                          }
+                        },
+                        "@Name": "Transformation"
+                      },
+                      {
+                        "PolygonConfiguration": {
+                          "Polygon": {
+                            "Point": [
+                              {
+                                "x": "0",
+                                "y": "0"
+                              },
+                              {
+                                "x": "0",
+                                "y": "576"
+                              },
+                              {
+                                "x": "704",
+                                "y": "576"
+                              },
+                              {
+                                "x": "704",
+                                "y": "0"
+                              }
+                            ]
+                          }
+                        },
+                        "@Name": "Field"
+                      }
+                    ]
+                  },
+                  "@Name": "MyTamperDetecModule",
+                  "@Type": "tt:TamperEngine"
+                }
+              ]
+            },
+            "RuleEngineConfiguration": {
+              "Rule": [
+                {
+                  "Parameters": {
+                    "SimpleItem": [
+                      {
+                        "Name": "MinCount",
+                        "Value": "5"
+                      },
+                      {
+                        "Name": "AlarmOnDelay",
+                        "Value": "100"
+                      },
+                      {
+                        "Name": "AlarmOffDelay",
+                        "Value": "100"
+                      },
+                      {
+                        "Name": "ActiveCells",
+                        "Value": "+/8AgA=="
+                      }
+                    ]
+                  },
+                  "@Name": "MyMotionDetectorRule",
+                  "@Type": "tt:CellMotionDetector"
+                },
+                {
+                  "Parameters": {
+                    "ElementItem": {
+                      "PolygonConfiguration": {
+                        "Polygon": {
+                          "Point": [
+                            {
+                              "x": "0",
+                              "y": "0"
+                            },
+                            {
+                              "x": "0",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "0"
+                            }
+                          ]
+                        }
+                      },
+                      "@Name": "Field"
+                    }
+                  },
+                  "@Name": "MyTamperDetectorRule",
+                  "@Type": "tt:TamperDetector"
+                }
+              ]
+            },
+            "@token": "VideoAnalyticsToken0"
+          },
+          "PTZ": {
+            "Name": "PTZConfiguration",
+            "UseCount": "3",
+            "NodeToken": "NODE_000",
+            "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+            "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+            "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+            "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+            "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+            "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+            "DefaultPTZSpeed": {
+              "PanTilt": {
+                "x": "0.5",
+                "y": "0.5",
+                "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+              },
+              "Zoom": {
+                "x": "0.5",
+                "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+              }
+            },
+            "DefaultPTZTimeout": "PT5S",
+            "PanTiltLimits": {
+              "Range": {
+                "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+                "XRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                },
+                "YRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                }
+              }
+            },
+            "ZoomLimits": {
+              "Range": {
+                "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+                "XRange": {
+                  "Min": "0.0",
+                  "Max": "1.0"
+                }
+              }
+            },
+            "Extension": {
+              "PTControlDirection": {
+                "EFlip": {
+                  "Mode": "OFF"
+                },
+                "Reverse": {
+                  "Mode": "OFF"
+                }
+              }
+            },
+            "@token": "PTZConfigurationToken",
+            "@MoveRamp": "0",
+            "@PresetRamp": "0",
+            "@PresetTourRamp": "0"
+          }
+        },
+        "@token": "PROFILE_000",
+        "@fixed": "true"
+      },
+      {
+        "Name": "subStream",
+        "Configurations": {
+          "VideoSource": {
+            "Name": "V_SRC_CFG_000",
+            "UseCount": "3",
+            "SourceToken": "V_SRC_000",
+            "Bounds": {
+              "height": "1080",
+              "width": "1920",
+              "y": "0",
+              "x": "0"
+            },
+            "@token": "V_SRC_000"
+          },
+          "AudioSource": {
+            "Name": "A_SRC_CFG_000",
+            "UseCount": "2",
+            "SourceToken": "AudioSourceToken",
+            "@token": "A_SRC_CFG_000"
+          },
+          "VideoEncoder": {
+            "Name": "V_ENC_001",
+            "UseCount": "1",
+            "Encoding": "H264",
+            "Resolution": {
+              "Width": "704",
+              "Height": "576"
+            },
+            "RateControl": {
+              "FrameRateLimit": "12.0",
+              "BitrateLimit": "1024",
+              "@ConstantBitRate": "false"
+            },
+            "Multicast": {
+              "Address": {
+                "Type": "IPv4",
+                "IPv4Address": "239.0.1.0"
+              },
+              "Port": "32002",
+              "TTL": "2",
+              "AutoStart": "false"
+            },
+            "Quality": "2.00",
+            "@token": "V_ENC_001",
+            "@GovLength": "12",
+            "@Profile": "Main"
+          },
+          "AudioEncoder": {
+            "Name": "A_ENC_000",
+            "UseCount": "2",
+            "Encoding": "G711",
+            "Bitrate": "128",
+            "SampleRate": "8",
+            "@token": "A_ENC_000"
+          },
+          "Analytics": {
+            "Name": "VideoAnalytics",
+            "UseCount": "3",
+            "AnalyticsEngineConfiguration": {
+              "AnalyticsModule": [
+                {
+                  "Parameters": {
+                    "SimpleItem": {
+                      "Name": "Sensitivity",
+                      "Value": "50"
+                    },
+                    "ElementItem": {
+                      "CellLayout": {
+                        "Transformation": {
+                          "Translate": {
+                            "x": "-1.00",
+                            "y": "-1.00"
+                          },
+                          "Scale": {
+                            "x": "0.285714",
+                            "y": "0.285714"
+                          }
+                        },
+                        "@Columns": "7",
+                        "@Rows": "7"
+                      },
+                      "@Name": "Layout"
+                    }
+                  },
+                  "@Name": "MyCellMotionModule",
+                  "@Type": "tt:CellMotionEngine"
+                },
+                {
+                  "Parameters": {
+                    "SimpleItem": {
+                      "Name": "Sensitivity",
+                      "Value": "50"
+                    },
+                    "ElementItem": [
+                      {
+                        "Transformation": {
+                          "Translate": {
+                            "x": "-1.000000",
+                            "y": "-1.000000"
+                          },
+                          "Scale": {
+                            "x": "0.002841",
+                            "y": "0.003472"
+                          }
+                        },
+                        "@Name": "Transformation"
+                      },
+                      {
+                        "PolygonConfiguration": {
+                          "Polygon": {
+                            "Point": [
+                              {
+                                "x": "0",
+                                "y": "0"
+                              },
+                              {
+                                "x": "0",
+                                "y": "576"
+                              },
+                              {
+                                "x": "704",
+                                "y": "576"
+                              },
+                              {
+                                "x": "704",
+                                "y": "0"
+                              }
+                            ]
+                          }
+                        },
+                        "@Name": "Field"
+                      }
+                    ]
+                  },
+                  "@Name": "MyTamperDetecModule",
+                  "@Type": "tt:TamperEngine"
+                }
+              ]
+            },
+            "RuleEngineConfiguration": {
+              "Rule": [
+                {
+                  "Parameters": {
+                    "SimpleItem": [
+                      {
+                        "Name": "MinCount",
+                        "Value": "5"
+                      },
+                      {
+                        "Name": "AlarmOnDelay",
+                        "Value": "100"
+                      },
+                      {
+                        "Name": "AlarmOffDelay",
+                        "Value": "100"
+                      },
+                      {
+                        "Name": "ActiveCells",
+                        "Value": "+/8AgA=="
+                      }
+                    ]
+                  },
+                  "@Name": "MyMotionDetectorRule",
+                  "@Type": "tt:CellMotionDetector"
+                },
+                {
+                  "Parameters": {
+                    "ElementItem": {
+                      "PolygonConfiguration": {
+                        "Polygon": {
+                          "Point": [
+                            {
+                              "x": "0",
+                              "y": "0"
+                            },
+                            {
+                              "x": "0",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "0"
+                            }
+                          ]
+                        }
+                      },
+                      "@Name": "Field"
+                    }
+                  },
+                  "@Name": "MyTamperDetectorRule",
+                  "@Type": "tt:TamperDetector"
+                }
+              ]
+            },
+            "@token": "VideoAnalyticsToken0"
+          },
+          "PTZ": {
+            "Name": "PTZConfiguration",
+            "UseCount": "3",
+            "NodeToken": "NODE_000",
+            "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+            "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+            "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+            "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+            "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+            "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+            "DefaultPTZSpeed": {
+              "PanTilt": {
+                "x": "0.5",
+                "y": "0.5",
+                "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+              },
+              "Zoom": {
+                "x": "0.5",
+                "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+              }
+            },
+            "DefaultPTZTimeout": "PT5S",
+            "PanTiltLimits": {
+              "Range": {
+                "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+                "XRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                },
+                "YRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                }
+              }
+            },
+            "ZoomLimits": {
+              "Range": {
+                "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+                "XRange": {
+                  "Min": "0.0",
+                  "Max": "1.0"
+                }
+              }
+            },
+            "Extension": {
+              "PTControlDirection": {
+                "EFlip": {
+                  "Mode": "OFF"
+                },
+                "Reverse": {
+                  "Mode": "OFF"
+                }
+              }
+            },
+            "@token": "PTZConfigurationToken",
+            "@MoveRamp": "0",
+            "@PresetRamp": "0",
+            "@PresetTourRamp": "0"
+          }
+        },
+        "@token": "PROFILE_001",
+        "@fixed": "true"
+      },
+      {
+        "Name": "snapStream",
+        "Configurations": {
+          "VideoSource": {
+            "Name": "V_SRC_CFG_000",
+            "UseCount": "3",
+            "SourceToken": "V_SRC_000",
+            "Bounds": {
+              "height": "1080",
+              "width": "1920",
+              "y": "0",
+              "x": "0"
+            },
+            "@token": "V_SRC_000"
+          },
+          "VideoEncoder": {
+            "Name": "V_ENC_002",
+            "UseCount": "1",
+            "Encoding": "JPEG",
+            "Resolution": {
+              "Width": "704",
+              "Height": "576"
+            },
+            "RateControl": {
+              "FrameRateLimit": "-3600.0",
+              "BitrateLimit": "512",
+              "@ConstantBitRate": "false"
+            },
+            "Multicast": {
+              "Address": {
+                "Type": "IPv4",
+                "IPv4Address": "239.0.1.0"
+              },
+              "Port": "32002",
+              "TTL": "2",
+              "AutoStart": "false"
+            },
+            "Quality": "3.00",
+            "@token": "V_ENC_002"
+          },
+          "Analytics": {
+            "Name": "VideoAnalytics",
+            "UseCount": "3",
+            "AnalyticsEngineConfiguration": {
+              "AnalyticsModule": [
+                {
+                  "Parameters": {
+                    "SimpleItem": {
+                      "Name": "Sensitivity",
+                      "Value": "50"
+                    },
+                    "ElementItem": {
+                      "CellLayout": {
+                        "Transformation": {
+                          "Translate": {
+                            "x": "-1.00",
+                            "y": "-1.00"
+                          },
+                          "Scale": {
+                            "x": "0.285714",
+                            "y": "0.285714"
+                          }
+                        },
+                        "@Columns": "7",
+                        "@Rows": "7"
+                      },
+                      "@Name": "Layout"
+                    }
+                  },
+                  "@Name": "MyCellMotionModule",
+                  "@Type": "tt:CellMotionEngine"
+                },
+                {
+                  "Parameters": {
+                    "SimpleItem": {
+                      "Name": "Sensitivity",
+                      "Value": "50"
+                    },
+                    "ElementItem": [
+                      {
+                        "Transformation": {
+                          "Translate": {
+                            "x": "-1.000000",
+                            "y": "-1.000000"
+                          },
+                          "Scale": {
+                            "x": "0.002841",
+                            "y": "0.003472"
+                          }
+                        },
+                        "@Name": "Transformation"
+                      },
+                      {
+                        "PolygonConfiguration": {
+                          "Polygon": {
+                            "Point": [
+                              {
+                                "x": "0",
+                                "y": "0"
+                              },
+                              {
+                                "x": "0",
+                                "y": "576"
+                              },
+                              {
+                                "x": "704",
+                                "y": "576"
+                              },
+                              {
+                                "x": "704",
+                                "y": "0"
+                              }
+                            ]
+                          }
+                        },
+                        "@Name": "Field"
+                      }
+                    ]
+                  },
+                  "@Name": "MyTamperDetecModule",
+                  "@Type": "tt:TamperEngine"
+                }
+              ]
+            },
+            "RuleEngineConfiguration": {
+              "Rule": [
+                {
+                  "Parameters": {
+                    "SimpleItem": [
+                      {
+                        "Name": "MinCount",
+                        "Value": "5"
+                      },
+                      {
+                        "Name": "AlarmOnDelay",
+                        "Value": "100"
+                      },
+                      {
+                        "Name": "AlarmOffDelay",
+                        "Value": "100"
+                      },
+                      {
+                        "Name": "ActiveCells",
+                        "Value": "+/8AgA=="
+                      }
+                    ]
+                  },
+                  "@Name": "MyMotionDetectorRule",
+                  "@Type": "tt:CellMotionDetector"
+                },
+                {
+                  "Parameters": {
+                    "ElementItem": {
+                      "PolygonConfiguration": {
+                        "Polygon": {
+                          "Point": [
+                            {
+                              "x": "0",
+                              "y": "0"
+                            },
+                            {
+                              "x": "0",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "576"
+                            },
+                            {
+                              "x": "704",
+                              "y": "0"
+                            }
+                          ]
+                        }
+                      },
+                      "@Name": "Field"
+                    }
+                  },
+                  "@Name": "MyTamperDetectorRule",
+                  "@Type": "tt:TamperDetector"
+                }
+              ]
+            },
+            "@token": "VideoAnalyticsToken0"
+          },
+          "PTZ": {
+            "Name": "PTZConfiguration",
+            "UseCount": "3",
+            "NodeToken": "NODE_000",
+            "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+            "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+            "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+            "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+            "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+            "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+            "DefaultPTZSpeed": {
+              "PanTilt": {
+                "x": "0.5",
+                "y": "0.5",
+                "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+              },
+              "Zoom": {
+                "x": "0.5",
+                "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+              }
+            },
+            "DefaultPTZTimeout": "PT5S",
+            "PanTiltLimits": {
+              "Range": {
+                "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+                "XRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                },
+                "YRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                }
+              }
+            },
+            "ZoomLimits": {
+              "Range": {
+                "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+                "XRange": {
+                  "Min": "0.0",
+                  "Max": "1.0"
+                }
+              }
+            },
+            "Extension": {
+              "PTControlDirection": {
+                "EFlip": {
+                  "Mode": "OFF"
+                },
+                "Reverse": {
+                  "Mode": "OFF"
+                }
+              }
+            },
+            "@token": "PTZConfigurationToken",
+            "@MoveRamp": "0",
+            "@PresetRamp": "0",
+            "@PresetTourRamp": "0"
+          }
+        },
+        "@token": "PROFILE_002",
+        "@fixed": "true"
+      }
+    ],
+    "video_source_configurations": [
+      {
+        "Name": "V_SRC_CFG_000",
+        "UseCount": "3",
+        "SourceToken": "V_SRC_000",
+        "Bounds": {
+          "height": "1080",
+          "width": "1920",
+          "y": "0",
+          "x": "0"
+        },
+        "@token": "V_SRC_000"
+      }
+    ],
+    "video_encoder_configurations": [
+      {
+        "Name": "V_ENC_000",
+        "UseCount": "1",
+        "Encoding": "H264",
+        "Resolution": {
+          "Width": "1920",
+          "Height": "1080"
+        },
+        "RateControl": {
+          "FrameRateLimit": "12.0",
+          "BitrateLimit": "2560",
+          "@ConstantBitRate": "false"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "Quality": "2.00",
+        "@token": "V_ENC_000",
+        "@GovLength": "12",
+        "@Profile": "Main",
+        "Options": {
+          "Options": {
+            "Encoding": "H264",
+            "QualityRange": {
+              "Min": "0",
+              "Max": "5"
+            },
+            "ResolutionsAvailable": {
+              "Width": "1920",
+              "Height": "1080"
+            },
+            "BitrateRange": {
+              "Min": "32",
+              "Max": "10240"
+            },
+            "@GovLengthRange": "1 400",
+            "@FrameRatesSupported": "25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1",
+            "@ProfilesSupported": "Baseline Main High",
+            "@ConstantBitRateSupported": "true"
+          }
+        }
+      },
+      {
+        "Name": "V_ENC_001",
+        "UseCount": "1",
+        "Encoding": "H264",
+        "Resolution": {
+          "Width": "704",
+          "Height": "576"
+        },
+        "RateControl": {
+          "FrameRateLimit": "12.0",
+          "BitrateLimit": "1024",
+          "@ConstantBitRate": "false"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "Quality": "2.00",
+        "@token": "V_ENC_001",
+        "@GovLength": "12",
+        "@Profile": "Main",
+        "Options": {
+          "Options": {
+            "Encoding": "H264",
+            "QualityRange": {
+              "Min": "0",
+              "Max": "5"
+            },
+            "ResolutionsAvailable": [
+              {
+                "Width": "704",
+                "Height": "576"
+              },
+              {
+                "Width": "352",
+                "Height": "288"
+              }
+            ],
+            "BitrateRange": {
+              "Min": "32",
+              "Max": "8192"
+            },
+            "@GovLengthRange": "1 400",
+            "@FrameRatesSupported": "25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1",
+            "@ProfilesSupported": "Baseline Main High",
+            "@ConstantBitRateSupported": "true"
+          }
+        }
+      },
+      {
+        "Name": "V_ENC_002",
+        "UseCount": "1",
+        "Encoding": "JPEG",
+        "Resolution": {
+          "Width": "704",
+          "Height": "576"
+        },
+        "RateControl": {
+          "FrameRateLimit": "-3600.0",
+          "BitrateLimit": "512",
+          "@ConstantBitRate": "false"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "Quality": "3.00",
+        "@token": "V_ENC_002",
+        "Options": {
+          "Options": {
+            "Encoding": "JPEG",
+            "QualityRange": {
+              "Min": "0",
+              "Max": "5"
+            },
+            "ResolutionsAvailable": [
+              {
+                "Width": "704",
+                "Height": "576"
+              },
+              {
+                "Width": "352",
+                "Height": "288"
+              }
+            ],
+            "BitrateRange": {
+              "Min": "32",
+              "Max": "8192"
+            },
+            "@FrameRatesSupported": "1",
+            "@ConstantBitRateSupported": "true"
+          }
+        }
+      }
+    ],
+    "audio_source_configurations": [
+      {
+        "Name": "A_SRC_CFG_000",
+        "UseCount": "2",
+        "SourceToken": "AudioSourceToken",
+        "@token": "A_SRC_CFG_000"
+      }
+    ],
+    "audio_encoder_configurations": [
+      {
+        "Name": "A_ENC_000",
+        "UseCount": "2",
+        "Encoding": "G711",
+        "Bitrate": "128",
+        "SampleRate": "8",
+        "@token": "A_ENC_000",
+        "Options": {
+          "Options": {
+            "Encoding": "PCMU",
+            "BitrateList": {
+              "Items": "128"
+            },
+            "SampleRateList": {
+              "Items": "8"
+            }
+          }
+        }
+      }
+    ],
+    "metadata_configurations": [
+      {
+        "Name": "MetadataConfiguration",
+        "UseCount": "0",
+        "PTZStatus": {
+          "Status": "true",
+          "Position": "false"
+        },
+        "Multicast": {
+          "Address": {
+            "Type": "IPv4",
+            "IPv4Address": "239.0.1.0"
+          },
+          "Port": "32002",
+          "TTL": "2",
+          "AutoStart": "false"
+        },
+        "SessionTimeout": "PT60S",
+        "@token": "MetadataToken"
+      }
+    ],
+    "stream_uris": {
+      "PROFILE_000": "rtsp://192.168.1.177:554/user=admin_password=NE83HO2r_channel=0_stream=0.sdp?real_stream",
+      "PROFILE_001": "rtsp://192.168.1.177:554/user=admin_password=NE83HO2r_channel=0_stream=1.sdp?real_stream",
+      "PROFILE_002": "rtsp://192.168.1.177:554/stream=2"
+    },
+    "snapshot_uris": {
+      "PROFILE_000": "http://192.168.1.177/webcapture.jpg?command=snap&channel=0&user=admin&password=NE83HO2r",
+      "PROFILE_001": "http://192.168.1.177/webcapture.jpg?command=snap&channel=0&user=admin&password=NE83HO2r",
+      "PROFILE_002": "http://192.168.1.177/webcapture.jpg?command=snap&channel=0&user=admin&password=NE83HO2r"
+    }
+  },
+  "imaging": {
+    "settings": {
+      "V_SRC_000": {
+        "ImagingSettings": {
+          "BacklightCompensation": {
+            "Mode": "OFF",
+            "Level": "10.0"
+          },
+          "Brightness": "50.0",
+          "ColorSaturation": "50.0",
+          "Contrast": "50.0",
+          "Exposure": {
+            "Mode": "AUTO",
+            "Priority": "LowNoise",
+            "Window": {
+              "bottom": "1.0",
+              "top": "0.0",
+              "right": "1.0",
+              "left": "0.0"
+            },
+            "MinExposureTime": "10.0",
+            "MaxExposureTime": "40000.0",
+            "MinGain": "0.0",
+            "MaxGain": "100.0",
+            "MinIris": "0.0",
+            "MaxIris": "10.0",
+            "ExposureTime": "4000.0",
+            "Gain": "100.0",
+            "Iris": "10.0"
+          },
+          "Focus": {
+            "AutoFocusMode": "AUTO",
+            "DefaultSpeed": "100.0",
+            "NearLimit": "100.0",
+            "FarLimit": "1000.0"
+          },
+          "IrCutFilter": "AUTO",
+          "Sharpness": "3848.0",
+          "WideDynamicRange": {
+            "Mode": "OFF",
+            "Level": "50.0"
+          },
+          "WhiteBalance": {
+            "Mode": "AUTO",
+            "CrGain": "10.0",
+            "CbGain": "10.0"
+          }
+        }
+      }
+    },
+    "options": {
+      "V_SRC_000": {
+        "ImagingOptions": {
+          "BacklightCompensation": {
+            "Mode": [
+              "OFF",
+              "ON"
+            ],
+            "Level": {
+              "Min": "0.0",
+              "Max": "100.0"
+            }
+          },
+          "Brightness": {
+            "Min": "0.0",
+            "Max": "100.0"
+          },
+          "ColorSaturation": {
+            "Min": "0.0",
+            "Max": "100.0"
+          },
+          "Contrast": {
+            "Min": "0.0",
+            "Max": "100.0"
+          },
+          "Exposure": {
+            "Mode": [
+              "AUTO",
+              "MANUAL"
+            ],
+            "Priority": [
+              "LowNoise",
+              "FrameRate"
+            ],
+            "MinExposureTime": {
+              "Min": "10.0",
+              "Max": "10.0"
+            },
+            "MaxExposureTime": {
+              "Min": "10.0",
+              "Max": "320000.0"
+            },
+            "MinGain": {
+              "Min": "0.0",
+              "Max": "0.0"
+            },
+            "MaxGain": {
+              "Min": "0.0",
+              "Max": "100.0"
+            },
+            "MinIris": {
+              "Min": "0.0",
+              "Max": "10.0"
+            },
+            "MaxIris": {
+              "Min": "0.0",
+              "Max": "10.0"
+            },
+            "ExposureTime": {
+              "Min": "0.0",
+              "Max": "40000.0"
+            },
+            "Gain": {
+              "Min": "0.0",
+              "Max": "100.0"
+            },
+            "Iris": {
+              "Min": "0.0",
+              "Max": "100.0"
+            }
+          },
+          "Focus": {
+            "AutoFocusModes": [
+              "AUTO",
+              "MANUAL"
+            ],
+            "DefaultSpeed": {
+              "Min": "0.0",
+              "Max": "100.0"
+            },
+            "NearLimit": {
+              "Min": "0.0",
+              "Max": "100.0"
+            },
+            "FarLimit": {
+              "Min": "0.0",
+              "Max": "1000.0"
+            }
+          },
+          "IrCutFilterModes": [
+            "ON",
+            "OFF",
+            "AUTO"
+          ],
+          "Sharpness": {
+            "Min": "0.0",
+            "Max": "15.0"
+          },
+          "WideDynamicRange": {
+            "Mode": [
+              "ON",
+              "OFF"
+            ],
+            "Level": {
+              "Min": "0.0",
+              "Max": "100.0"
+            }
+          },
+          "WhiteBalance": {
+            "Mode": [
+              "AUTO",
+              "MANUAL"
+            ],
+            "YrGain": {
+              "Min": "0.0",
+              "Max": "100.0"
+            },
+            "YbGain": {
+              "Min": "0.0",
+              "Max": "100.0"
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "V_SRC_000": {
+        "Status": {
+          "FocusStatus20": {
+            "Position": "0.0",
+            "MoveStatus": "IDLE"
+          }
+        }
+      }
+    },
+    "service_capabilities": {
+      "Capabilities": {
+        "ImageStabilization": "false",
+        "Presets": "false"
+      }
+    }
+  },
+  "ptz": {
+    "nodes": [
+      {
+        "Name": "PTZNode",
+        "SupportedPTZSpaces": {
+          "ContinuousPanTiltVelocitySpace": {
+            "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+            "XRange": {
+              "Min": "-1.0",
+              "Max": "1.0"
+            },
+            "YRange": {
+              "Min": "-1.0",
+              "Max": "1.0"
+            }
+          },
+          "ContinuousZoomVelocitySpace": {
+            "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+            "XRange": {
+              "Min": "-1.0",
+              "Max": "1.0"
+            }
+          },
+          "PanTiltSpeedSpace": {
+            "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace",
+            "XRange": {
+              "Min": "1.0",
+              "Max": "8.0"
+            }
+          },
+          "ZoomSpeedSpace": {
+            "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace",
+            "XRange": {
+              "Min": "1.0",
+              "Max": "8.0"
+            }
+          }
+        },
+        "MaximumNumberOfPresets": "100",
+        "HomeSupported": "true",
+        "AuxiliaryCommands": [
+          "Wiper start",
+          "Wiper stop"
+        ],
+        "Extension": {
+          "SupportedPresetTour": {
+            "MaximumNumberOfPresetTours": "1",
+            "PTZPresetTourOperation": [
+              "Start",
+              "Stop",
+              "Pause"
+            ]
+          }
+        },
+        "@token": "NODE_000",
+        "@FixedHomePosition": "false"
+      }
+    ],
+    "configurations": [
+      {
+        "Name": "PTZConfiguration",
+        "UseCount": "3",
+        "NodeToken": "NODE_000",
+        "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+        "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+        "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+        "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+        "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+        "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+        "DefaultPTZSpeed": {
+          "PanTilt": {
+            "x": "0.5",
+            "y": "0.5",
+            "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+          },
+          "Zoom": {
+            "x": "0.5",
+            "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+          }
+        },
+        "DefaultPTZTimeout": "PT5S",
+        "PanTiltLimits": {
+          "Range": {
+            "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+            "XRange": {
+              "Min": "-1.0",
+              "Max": "1.0"
+            },
+            "YRange": {
+              "Min": "-1.0",
+              "Max": "1.0"
+            }
+          }
+        },
+        "ZoomLimits": {
+          "Range": {
+            "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+            "XRange": {
+              "Min": "0.0",
+              "Max": "1.0"
+            }
+          }
+        },
+        "Extension": {
+          "PTControlDirection": {
+            "EFlip": {
+              "Mode": "OFF"
+            },
+            "Reverse": {
+              "Mode": "OFF"
+            }
+          }
+        },
+        "@token": "PTZConfigurationToken",
+        "@MoveRamp": "0",
+        "@PresetRamp": "0",
+        "@PresetTourRamp": "0",
+        "Options": {
+          "PTZConfigurationOptions": {
+            "Spaces": {
+              "ContinuousPanTiltVelocitySpace": {
+                "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+                "XRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                },
+                "YRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                }
+              },
+              "ContinuousZoomVelocitySpace": {
+                "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+                "XRange": {
+                  "Min": "-1.0",
+                  "Max": "1.0"
+                }
+              },
+              "PanTiltSpeedSpace": {
+                "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace",
+                "XRange": {
+                  "Min": "1.0",
+                  "Max": "8.0"
+                }
+              },
+              "ZoomSpeedSpace": {
+                "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace",
+                "XRange": {
+                  "Min": "1.0",
+                  "Max": "8.0"
+                }
+              }
+            },
+            "PTZTimeout": {
+              "Min": "PT1S",
+              "Max": "PT100S"
+            },
+            "PTControlDirection": {
+              "EFlip": {
+                "Mode": [
+                  "OFF",
+                  "ON"
+                ]
+              },
+              "Reverse": {
+                "Mode": [
+                  "OFF",
+                  "ON",
+                  "AUTO"
+                ]
+              }
+            }
+          }
+        }
+      }
+    ],
+    "service_capabilities": {
+      "Capabilities": {
+        "EFlip": "true",
+        "Reverse": "true",
+        "GetCompatibleConfigurations": "true",
+        "MoveStatus": "true",
+        "StatusPosition": "true"
+      }
+    },
+    "presets": {},
+    "status": {
+      "PROFILE_000": {
+        "PTZStatus": {
+          "Position": {
+            "PanTilt": {
+              "x": "0.0",
+              "y": "0.0",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace"
+            },
+            "Zoom": {
+              "x": "0.0",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace"
+            }
+          },
+          "MoveStatus": {
+            "PanTilt": "IDLE",
+            "Zoom": "IDLE"
+          },
+          "UtcTime": "2026-09-10T02:06:23Z"
+        }
+      },
+      "PROFILE_001": {
+        "PTZStatus": {
+          "Position": {
+            "PanTilt": {
+              "x": "0.0",
+              "y": "0.0",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace"
+            },
+            "Zoom": {
+              "x": "0.0",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace"
+            }
+          },
+          "MoveStatus": {
+            "PanTilt": "IDLE",
+            "Zoom": "IDLE"
+          },
+          "UtcTime": "2026-09-10T02:06:23Z"
+        }
+      },
+      "PROFILE_002": {
+        "PTZStatus": {
+          "Position": {
+            "PanTilt": {
+              "x": "0.0",
+              "y": "0.0",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace"
+            },
+            "Zoom": {
+              "x": "0.0",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace"
+            }
+          },
+          "MoveStatus": {
+            "PanTilt": "IDLE",
+            "Zoom": "IDLE"
+          },
+          "UtcTime": "2026-09-10T02:06:23Z"
+        }
+      }
+    },
+    "compatible_configurations": {
+      "PROFILE_000": [
+        {
+          "Name": "PTZConfiguration",
+          "UseCount": "3",
+          "NodeToken": "NODE_000",
+          "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+          "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+          "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+          "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+          "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+          "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+          "DefaultPTZSpeed": {
+            "PanTilt": {
+              "x": "0.5",
+              "y": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+            },
+            "Zoom": {
+              "x": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+            }
+          },
+          "DefaultPTZTimeout": "PT5S",
+          "PanTiltLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              },
+              "YRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "ZoomLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "0.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "Extension": {
+            "PTControlDirection": {
+              "EFlip": {
+                "Mode": "OFF"
+              },
+              "Reverse": {
+                "Mode": "OFF"
+              }
+            }
+          },
+          "@token": "PTZConfigurationToken",
+          "@MoveRamp": "0",
+          "@PresetRamp": "0",
+          "@PresetTourRamp": "0"
+        }
+      ],
+      "PROFILE_001": [
+        {
+          "Name": "PTZConfiguration",
+          "UseCount": "3",
+          "NodeToken": "NODE_000",
+          "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+          "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+          "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+          "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+          "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+          "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+          "DefaultPTZSpeed": {
+            "PanTilt": {
+              "x": "0.5",
+              "y": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+            },
+            "Zoom": {
+              "x": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+            }
+          },
+          "DefaultPTZTimeout": "PT5S",
+          "PanTiltLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              },
+              "YRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "ZoomLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "0.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "Extension": {
+            "PTControlDirection": {
+              "EFlip": {
+                "Mode": "OFF"
+              },
+              "Reverse": {
+                "Mode": "OFF"
+              }
+            }
+          },
+          "@token": "PTZConfigurationToken",
+          "@MoveRamp": "0",
+          "@PresetRamp": "0",
+          "@PresetTourRamp": "0"
+        }
+      ],
+      "PROFILE_002": [
+        {
+          "Name": "PTZConfiguration",
+          "UseCount": "3",
+          "NodeToken": "NODE_000",
+          "DefaultAbsolutePantTiltPositionSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+          "DefaultAbsoluteZoomPositionSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+          "DefaultRelativePanTiltTranslationSpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/TranslationGenericSpace",
+          "DefaultRelativeZoomTranslationSpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/TranslationGenericSpace",
+          "DefaultContinuousPanTiltVelocitySpace": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/VelocityGenericSpace",
+          "DefaultContinuousZoomVelocitySpace": "http://www.onvif.org/ver10/tptz/ZoomSpaces/VelocityGenericSpace",
+          "DefaultPTZSpeed": {
+            "PanTilt": {
+              "x": "0.5",
+              "y": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace"
+            },
+            "Zoom": {
+              "x": "0.5",
+              "space": "http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace"
+            }
+          },
+          "DefaultPTZTimeout": "PT5S",
+          "PanTiltLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              },
+              "YRange": {
+                "Min": "-1.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "ZoomLimits": {
+            "Range": {
+              "URI": "http://www.onvif.org/ver10/tptz/ZoomSpaces/PositionGenericSpace",
+              "XRange": {
+                "Min": "0.0",
+                "Max": "1.0"
+              }
+            }
+          },
+          "Extension": {
+            "PTControlDirection": {
+              "EFlip": {
+                "Mode": "OFF"
+              },
+              "Reverse": {
+                "Mode": "OFF"
+              }
+            }
+          },
+          "@token": "PTZConfigurationToken",
+          "@MoveRamp": "0",
+          "@PresetRamp": "0",
+          "@PresetTourRamp": "0"
+        }
+      ]
+    }
+  },
+  "events": {
+    "service_capabilities": {
+      "Capabilities": {
+        "WSSubscriptionPolicySupport": "true",
+        "WSPullPointSupport": "true",
+        "WSPausableSubscriptionManagerInterfaceSupport": "false",
+        "MaxNotificationProducers": "10",
+        "MaxPullPoints": "10",
+        "PersistentNotificationStorage": "false"
+      }
+    },
+    "properties": {
+      "TopicNamespaceLocation": "http://www.onvif.org/onvif/ver10/topics/topicns.xml",
+      "{http://docs.oasis-open.org/wsn/b-2}FixedTopicSet": "true",
+      "{http://docs.oasis-open.org/wsn/t-1}TopicSet": {
+        "{http://www.onvif.org/ver10/topics}VideoSource": {
+          "MotionAlarm": {
+            "MessageDescription": {
+              "Source": {
+                "SimpleItemDescription": {
+                  "Name": "Source",
+                  "Type": "tt:ReferenceToken"
+                }
+              },
+              "Data": {
+                "SimpleItemDescription": {
+                  "Name": "State",
+                  "Type": "xs:boolean"
+                }
+              },
+              "@IsProperty": "true"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+        },
+        "{http://www.onvif.org/ver10/topics}Configuration": {
+          "Profile": {
+            "MessageDescription": {
+              "Source": {
+                "SimpleItemDescription": {
+                  "Name": "Token",
+                  "Type": "tt:ReferenceToken"
+                }
+              },
+              "Data": {
+                "ElementItemDescription": {
+                  "Name": "Configuration",
+                  "Type": "tt:Profile"
+                }
+              },
+              "@IsProperty": "false"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "VideoEncoderConfiguration": {
+            "MessageDescription": {
+              "Source": {
+                "SimpleItemDescription": {
+                  "Name": "Token",
+                  "Type": "tt:ReferenceToken"
+                }
+              },
+              "Data": {
+                "ElementItemDescription": {
+                  "Name": "Configuration",
+                  "Type": "tt:VideoEncoderConfiguration"
+                }
+              },
+              "@IsProperty": "false"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "VideoSourceConfiguration": {
+            "MediaService": {
+              "MessageDescription": {
+                "Source": {
+                  "SimpleItemDescription": {
+                    "Name": "Token",
+                    "Type": "tt:ReferenceToken"
+                  }
+                },
+                "Data": {
+                  "ElementItemDescription": {
+                    "Name": "Configuration",
+                    "Type": "tt:VideoSourceConfiguration"
+                  }
+                },
+                "@IsProperty": "false"
+              },
+              "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "false"
+          },
+          "AudioEncoderConfiguration": {
+            "MessageDescription": {
+              "Source": {
+                "SimpleItemDescription": {
+                  "Name": "Token",
+                  "Type": "tt:ReferenceToken"
+                }
+              },
+              "Data": {
+                "ElementItemDescription": {
+                  "Name": "Configuration",
+                  "Type": "tt:AudioEncoderConfiguration"
+                }
+              },
+              "@IsProperty": "false"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "VideoAnalyticsConfiguration": {
+            "MessageDescription": {
+              "Source": {
+                "SimpleItemDescription": {
+                  "Name": "Token",
+                  "Type": "tt:ReferenceToken"
+                }
+              },
+              "Data": {
+                "ElementItemDescription": {
+                  "Name": "Configuration",
+                  "Type": "tt:VideoAnalyticsConfiguration"
+                }
+              },
+              "@IsProperty": "false"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "@{http://docs.oasis-open.org/wsn/t-1}topic": "false"
+        },
+        "{http://www.onvif.org/ver10/topics}Media": {
+          "ProfileChanged": {
+            "MessageDescription": {
+              "Data": {
+                "SimpleItemDescription": {
+                  "Name": "Token",
+                  "Type": "tt:ReferenceToken"
+                }
+              },
+              "@IsProperty": "false"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "ConfigurationChanged": {
+            "MessageDescription": {
+              "Source": {
+                "SimpleItemDescription": {
+                  "Name": "Token",
+                  "Type": "tt:ReferenceToken"
+                }
+              },
+              "Data": {
+                "SimpleItemDescription": {
+                  "Name": "Type",
+                  "Type": "xs:string"
+                }
+              },
+              "@IsProperty": "false"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "@{http://docs.oasis-open.org/wsn/t-1}topic": "false"
+        },
+        "{http://www.onvif.org/ver10/topics}RuleEngine": {
+          "CellMotionDetector": {
+            "Motion": {
+              "MessageDescription": {
+                "Source": {
+                  "SimpleItemDescription": [
+                    {
+                      "Name": "VideoSource",
+                      "Type": "tt:ReferenceToken"
+                    },
+                    {
+                      "Name": "Rule",
+                      "Type": "xs:string"
+                    }
+                  ]
+                },
+                "Data": {
+                  "SimpleItemDescription": {
+                    "Name": "State",
+                    "Type": "xs:boolean"
+                  }
+                },
+                "@IsProperty": "true"
+              },
+              "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "TamperDetector": {
+            "Tamper": {
+              "MessageDescription": {
+                "Source": {
+                  "SimpleItemDescription": [
+                    {
+                      "Name": "VideoSource",
+                      "Type": "tt:ReferenceToken"
+                    },
+                    {
+                      "Name": "Rule",
+                      "Type": "xs:string"
+                    }
+                  ]
+                },
+                "Data": {
+                  "SimpleItemDescription": {
+                    "Name": "IsTamper",
+                    "Type": "xs:boolean"
+                  }
+                },
+                "@IsProperty": "true"
+              },
+              "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+        },
+        "{http://www.onvif.org/ver10/topics}Device": [
+          {
+            "Trigger": {
+              "DigitalInput": {
+                "MessageDescription": {
+                  "Source": {
+                    "SimpleItemDescription": {
+                      "Name": "InputToken",
+                      "Type": "tt:ReferenceToken"
+                    }
+                  },
+                  "Data": {
+                    "SimpleItemDescription": {
+                      "Name": "LogicalState",
+                      "Type": "xs:boolean"
+                    }
+                  },
+                  "@IsProperty": "true"
+                },
+                "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+              },
+              "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          },
+          {
+            "Trigger": {
+              "Relay": {
+                "MessageDescription": {
+                  "Source": {
+                    "SimpleItemDescription": {
+                      "Name": "RelayToken",
+                      "Type": "tt:ReferenceToken"
+                    }
+                  },
+                  "Data": {
+                    "SimpleItemDescription": {
+                      "Name": "LogicalState",
+                      "Type": "tt:RelayLogicalState"
+                    }
+                  },
+                  "@IsProperty": "true"
+                },
+                "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+              },
+              "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+            },
+            "@{http://docs.oasis-open.org/wsn/t-1}topic": "true"
+          }
+        ]
+      },
+      "{http://docs.oasis-open.org/wsn/b-2}TopicExpressionDialect": [
+        "http://www.onvif.org/ver10/tev/topicExpression/ConcreteSet",
+        "http://docs.oasis-open.org/wsnt/t-1/TopicExpression/ConcreteSet",
+        "http://docs.oasis-open.org/wsn/t-1/TopicExpression/Concrete"
+      ],
+      "MessageContentFilterDialect": "http://www.onvif.org/ver10/tev/messageContentFilter/ItemFilter",
+      "MessageContentSchemaLocation": "http://www.onvif.org/onvif/ver10/schema/onvif.xsd"
+    }
+  },
+  "analytics": {
+    "supported_modules": {
+      "VideoAnalyticsToken0": []
+    },
+    "configured_modules": {
+      "VideoAnalyticsToken0": []
+    },
+    "service_capabilities": {
+      "Capabilities": {
+        "RuleSupport": "true",
+        "AnalyticsModuleSupport": "true",
+        "CellBasedSceneDescriptionSupported": "false",
+        "RuleOptionsSupported": "true",
+        "AnalyticsModuleOptionsSupported": "true"
+      }
+    }
+  },
+  "device_io": {
+    "service_capabilities": {
+      "Capabilities": {
+        "VideoSources": "1",
+        "VideoOutputs": "0",
+        "AudioSources": "1",
+        "AudioOutputs": "0",
+        "RelayOutputs": "0",
+        "SerialPorts": "0",
+        "DigitalInputs": "1",
+        "DigitalInputOptions": "true"
+      }
+    },
+    "video_sources": [
+      "V_SRC_000"
+    ],
+    "audio_sources": [
+      "AudioSourceToken"
+    ],
+    "relay_outputs": [
+      {
+        "Properties": {
+          "Mode": "Monostable",
+          "DelayTime": "PT10S",
+          "IdleState": "closed"
+        },
+        "@token": "RELAY_OUTPUT_000"
+      }
+    ],
+    "digital_inputs": [
+      {
+        "token": "DIGIT_INPUT_000",
+        "IdleState": "closed"
+      }
+    ],
+    "serial_ports": [
+      {
+        "token": "SERIAL_PORT_000"
+      }
+    ]
+  },
+  "recording": {},
+  "search": {},
+  "replay": {},
+  "extensions": [
+    {
+      "namespace": "http://docs.oasis-open.org/wsn/b-2",
+      "local_name": "FixedTopicSet"
+    },
+    {
+      "namespace": "http://docs.oasis-open.org/wsn/b-2",
+      "local_name": "TopicExpressionDialect"
+    },
+    {
+      "namespace": "http://docs.oasis-open.org/wsn/t-1",
+      "local_name": "TopicSet"
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/topics",
+      "local_name": "Configuration"
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/topics",
+      "local_name": "Device"
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/topics",
+      "local_name": "Media"
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/topics",
+      "local_name": "RuleEngine"
+    },
+    {
+      "namespace": "http://www.onvif.org/ver10/topics",
+      "local_name": "VideoSource"
+    }
+  ],
+  "errors": [
+    {
+      "status": "not_supported",
+      "http_status": 400,
+      "soap_fault_code": "s:Receiver ter:ActionNotSupported",
+      "soap_fault_reason": "",
+      "operation": "GetDynamicDNS",
+      "service": "Device"
+    },
+    {
+      "status": "not_supported",
+      "http_status": 400,
+      "soap_fault_code": "s:Receiver ter:ActionNotSupported",
+      "soap_fault_reason": "",
+      "operation": "GetCertificates",
+      "service": "Device"
+    },
+    {
+      "status": "not_supported",
+      "http_status": 400,
+      "soap_fault_code": "s:Receiver ter:ActionNotSupported",
+      "soap_fault_reason": "",
+      "operation": "GetCACertificates",
+      "service": "Device"
+    },
+    {
+      "status": "invalid_arguments",
+      "http_status": 400,
+      "soap_fault_code": "s:Sender ter:InvalidArgVal ter:NoConfig",
+      "soap_fault_reason": "",
+      "operation": "GetStreamUri",
+      "service": "Media"
+    }
+  ]
+}
